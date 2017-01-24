@@ -31,7 +31,7 @@ namespace Application
 
 			System.Console.Write(Environment.NewLine + "Enter the Growth Rate ");
 			hold = System.Console.Read();
-			System.Console.Write (Environment.NewLine + "Enter the Debt to Value Ratio");
+			/*System.Console.Write (Environment.NewLine + "Enter the Debt to Value Ratio");
 			debttov = System.Console.Read ();
 			if (hold < 4)
 			{growthRate = hold/100;
@@ -42,8 +42,7 @@ namespace Application
 				
 			}
 
-			calculateWACC = debttov*(.06 (1 - 0.35) + 0.55 * 0.11);
-
+			calculateWACC = debttov*(.06 (1 - 0.35) + 0.55 * 0.11);    */
 
 		}
 	} 
