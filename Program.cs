@@ -13,12 +13,21 @@ namespace a
 			double WACC;
 			string showIntro;string a;string b; // all of these should be on one line and rename a and b to be more descriptive
 
+		/**** 
 
-			eqtoval = 0.55;
+		EFFICIENCY PRO TIP: You don't need to declare two separate strings for showIntro just set the string
+
+		****/
+			eqtoval = 0.55; 
 			a = "Welcome to the CloudTools Valuation Tool";b = "Copyright Wolverines & Co. All Rights Resevered.";
 
 			showIntro = a + "\n" + b;
 			System.Console.Write (showIntro);
+		/**** 
+
+		EFFICIENCY PRO TIP: always use \n for a new line..do a scrub through your code to update
+
+		****/
 			System.Console.Write(Environment.NewLine + "Enter the Growth Rate ");
 			hold = System.Console.Read();
 
@@ -37,6 +46,11 @@ namespace a
 
 			double valueOfHorizonPeriod = 1 / ((1 + WACC) * (1 + WACC)*(1 + WACC)*(1 + WACC)*(1 + WACC)*(1 + WACC)) * 10 / WACC - growthRate;
 
+		/**** 
+
+		EFFICIENCY PRO TIP: Break this into multiple lines, it's too long
+		
+		****/
 
 			double valueOfForcastPeriod = (10)/(1+WACC) + (12)/((1+WACC)* (1+WACC) * (1+WACC)) + (14)/((1+WACC) * (1+WACC)* (1+WACC) * (1+WACC)) + (16)/((1+WACC)* (1+WACC) * (1+WACC) * (1+WACC) * (1+WACC)) + (18)/((1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)) + (20)/((1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)*(1+WACC)*(1+WACC));
 
