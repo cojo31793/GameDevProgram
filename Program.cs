@@ -43,12 +43,12 @@ namespace a
 			double valueOfCloudTools = valueOfForcastPeriod + valueOfHorizonPeriod;
 
 
-			System.Console.Write (Environment.NewLine + "The Value Of Cloud Tools" + valueOfHorizonPeriod);
+			System.Console.Write (Environment.NewLine + "The Value Of Cloud Tools" + valueOfHorizonPeriod +"*Please multiply value by millions");
 
 
 			// calculateWACC = debttov * (.06 (1 - 0.35) + (0.55 * 0.11));  
 			// this was the original line...notice you forgot the extra * after the 0.06 ...this is important  
-
+			//Im going to change the last output line
 
 		}
 	}
