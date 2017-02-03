@@ -63,7 +63,16 @@ namespace a
 			// calculateWACC = debttov * (.06 (1 - 0.35) + (0.55 * 0.11));  
 			// this was the original line...notice you forgot the extra * after the 0.06 ...this is important  
 
+		/*	double  & Sensitivity5 = .05% 
+			double & Sensitivity10  = .10%
+			double & Sensitivity20 = .20%
+			double & calculateSensitivity1 = valueOfCloudTools(growthRate + Sensitivity5)-Firmvalue(growthRate);	
+			double calculateSensitivity2 = valueOfCloudTools(growthRate + Sensitivity10)-Firmvalue(growthRate);
+			double calculateSensitivity3 = valueOfCloudTools(growthRate + Sensitivity20)-Firmvalue(growthRate);
 
+			System.Console.Write ( \n + "The Sensitivity Values for this company are" + \n + calculateSensitivity1 + \n + calculateSensitivity2 + \n + calculateSensitivity3)  ;  
+
+*/
 		}
 	}
 }
